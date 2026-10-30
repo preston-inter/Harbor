@@ -19,7 +19,7 @@ It's built natively in Swift and SwiftUI and runs on **macOS 14 Sonoma or later*
 - [Permissions](#permissions)
 - [Keyboard shortcuts](#keyboard-shortcuts)
 - [Privacy](#privacy)
-- [Updates](#updates)
+- [Updates and getting started](#updates-and-getting-started)
 - [Experimental features](#experimental-features)
 - [FAQ](#faq)
 
@@ -29,42 +29,32 @@ It's built natively in Swift and SwiftUI and runs on **macOS 14 Sonoma or later*
 
 The notch becomes a living part of your Mac. When it's closed, the island is exactly the size of your notch. Rest the pointer on it (or click it, if you prefer) and it opens.
 
+<!-- harbor:area-notchIsland:start -->
+- **The island**: Rest the pointer on the notch, or click it if you prefer, and the island opens; closed, it's exactly the size of your notch. Make it 60% to 130% the size, black to blend into the notch or Liquid Glass, with your own delay and animation speed. Macs without a notch get a floating island at the top center.
+
 **Now Playing**
-- While music plays, album art sits on the left of the notch and moving level bars on the right.
-- Open the island for the title, artist, a progress bar, and play, pause and skip.
-- Works with Music and Spotify out of the box. An experimental option covers every app, including browsers and Podcasts.
+- **Now Playing**: While music plays, album art sits on the left of the notch and moving level bars on the right. Open the island for the title, artist, a progress bar, and play, pause and skip. Works with Music and Spotify out of the box.
+- **Now Playing for every app** *(experimental, off by default)*: Music and Spotify use Apple-approved methods. All apps also covers browsers, Podcasts and more, but relies on an unofficial part of macOS that could stop working after an update. If it does, Harbor goes back to Music and Spotify.
 
 **Pop-ups**
-- **Volume:** a bar under the notch when you change the volume or mute. It follows whatever is playing sound, including headphones and AirPods.
-- **Brightness:** a pop-up when you press the brightness keys. An experimental option shows the exact level.
-- **Battery:** a short pop-up when you plug in or unplug, when charging finishes, and when the battery runs low.
-- **Focus:** a pop-up when Do Not Disturb or another Focus turns on or off.
-- **Dictation:** a microphone, a level meter and your words appearing live as you speak.
-- **Keep Awake:** a coffee cup and the time left while a timed Keep Awake runs.
-- **AirPods and Bluetooth:** when headphones, a speaker, keyboard or mouse connects, see its name and battery, with left, right and case levels for AirPods. Low levels show in orange.
-- **Downloads:** a progress ring beside the notch while Safari, Chrome, Firefox or Finder saves a file. Real percentages when the browser reports them, the growing size when it doesn't. Click the Done pop-up to show the file in Finder.
-
-**Camera and microphone**
-- A green dot beside the notch while the camera is on, an orange one for the microphone.
-- Open the island to see which apps are using the microphone. Harbor's own dictation never counts.
+- **Volume, brightness, battery and Focus pop-ups**: A volume bar when you change the volume or mute (it follows headphones and AirPods), a pop-up for the brightness keys, battery pop-ups when you plug in, finish charging or run low, and a note when a Focus turns on or off. They show alongside Apple's own, and each kind can be turned off.
+- **Exact brightness level** *(experimental, off by default)*: macOS has no approved way for apps to read the brightness level, so this uses an unofficial part of macOS. It only reads the level and never changes it. Without it, the pop-up shows which way brightness changed.
+- **AirPods and Bluetooth**: When AirPods, headphones, a speaker, keyboard or mouse connects, see its name and battery, with left, right and case levels for AirPods. Low levels show in orange. Headphones and speakers need no permission; keyboards, mice and controllers need Bluetooth permission.
+- **Download progress**: A progress ring beside the notch while Safari, Chrome, Firefox or Finder saves a file: real percentages when the browser reports them, the growing size when it doesn't. Click the Done pop-up to show the file in Finder.
+- **Camera and microphone in use**: A green dot beside the notch while the camera is on, an orange one for the microphone. Open the island to see which apps are using the microphone. Harbor's own dictation never counts.
 
 **When the island is open**
-- **Next calendar event** and how soon it starts. Click it to open Calendar.
-- **Quick buttons:** Keep Awake, Dark Mode, a timer, sound output and Lock Screen.
-- **Timer:** pick a length; the island lets you know when it's done.
-- **Join meetings:** when your next event has a Zoom, Google Meet, Teams, Webex or FaceTime link, a Join button appears next to it, and the island pops up a minute before it starts. Zoom links open straight in the Zoom app.
-- **Sound output:** switch between speakers, AirPods, headphones and displays, or pick another microphone, right from the island. Press and hold the volume pop-up to get there fast.
-- **Pomodoro:** 25-minute work sessions and short breaks, with a long break every four (all adjustable). The countdown is red while you work and green on breaks, today's count shows in the island, and Settings keeps a 7-day history. It can turn on Do Not Disturb while you work, using two shortcuts the guide helps you make.
-- **File shelf:** drag files onto the notch to set them aside, then drag them back out of the island when you need them. Right-click a file (or ⌘-click several) to AirDrop it, compress it to a .zip, resize an image (50%, 1080p, 720p or any width) or convert HEIC, PNG and JPEG. The result is always a new file next to the original, and lands on the shelf too.
+- **Quick buttons and timers**: Round buttons in the open island: Keep Awake, Dark Mode, Lock Screen, sound output, and a timer with 5, 15, 25 and 60 minute presets that tells you when it's done.
+- **Sound output picker**: Switch between speakers, AirPods, headphones and displays, or pick another microphone, right from the island. Press and hold the volume pop-up to get there fast.
+- **Next calendar event**: Your next event and how soon it starts, in the open island. Click it to open Calendar. Harbor only reads your calendar and never changes it.
+- **Join meetings**: When your next event has a Zoom, Google Meet, Teams, Webex or FaceTime link, a Join button appears next to it, and the island pops up a minute before it starts. Zoom links open straight in the Zoom app.
+- **Pomodoro**: 25-minute work sessions and short breaks, with a long break every four (all adjustable). The countdown is red while you work and green on breaks, today's count shows in the island, Settings keeps a 7-day history, and it can turn on Do Not Disturb while you work.
+- **File shelf**: Drag files onto the notch to set them aside, then drag them back out when you need them; the shelf points to your files instead of copying them. Right-click (or ⌘-click several) to AirDrop, zip, resize an image (50%, 1080p, 720p or any width) or convert HEIC, PNG and JPEG. The result is always a new file next to the original.
 
 **Music while you're away**
-- A Now Playing card over the screensaver.
-- An experimental option puts it on the lock screen too, just like on an iPhone.
-
-**Look and feel**
-- Size slider from 60% to 130%, scaling the open island and its text together.
-- Black (blends into the notch) or Liquid Glass style.
-- Open on hover or on click, with an adjustable delay and animation speed.
+- **Player over the screensaver**: A Now Playing card over the screensaver, so you can pause or skip before your Mac locks.
+- **Player on the lock screen** *(experimental, off by default)*: Shows the Now Playing card on the lock screen, like on an iPhone. It uses an unofficial part of macOS, and anyone at your locked Mac can see what's playing and pause or skip it.
+<!-- harbor:area-notchIsland:end -->
 
 ---
 
@@ -72,16 +62,13 @@ The notch becomes a living part of your Mac. When it's closed, the island is exa
 
 See your windows before you switch to them.
 
-- **Hover a Dock icon** to see a live picture of each of that app's windows, each card shaped like its window. Click one to jump straight to it.
-- **Minimized windows** show up too, with the last picture of what they looked like.
-- **Window titles** under each preview.
-- **⌘⇥ previews:** while Apple's app switcher is open, Harbor shows the selected app's windows above it. Apple's switcher still works exactly as before.
-- **Window switcher (⌥⇥):** switch between windows rather than apps, with a picture of each. Add ⇧ to go back, let go to switch, and Esc cancels.
-- **Window buttons:** hover a preview, in the Dock or the switcher, to close, minimize or full-screen that window. The preview updates on the spot.
-- **Click to minimize (optional):** click the Dock icon of the app you're using to minimize its windows or hide it. Click again to bring it back.
-- **Middle-click to quit (optional, for mice with a middle button):** middle-click a Dock icon to quit that app (it still asks about unsaved work). Hold ⌥ to force quit, with a confirmation. Finder and Harbor are never quit this way.
-- **Your choice of scope:** see only the windows on your current desktop (the default) or every desktop.
-- Three preview sizes and an adjustable hover delay.
+<!-- harbor:area-dock:start -->
+- **Dock previews**: Rest the pointer on a Dock icon to see a live picture of each of its windows, each card shaped like its window, and click one to jump straight to it. Minimized windows show their last picture, titles sit under each preview, and you can include windows on other desktops. Without Screen Recording permission you see app icons instead.
+- **Window buttons on previews**: Hover a preview, in the Dock or the window switcher, to close, minimize or full-screen that window. The preview updates on the spot.
+- **Previews in ⌘⇥**: While Apple's app switcher (⌘⇥) is open, Harbor shows the selected app's windows above it. Click one to jump to it; Apple's switcher still works exactly as before.
+- **Window switcher**: Switch between windows rather than apps, with a picture of each. Hold the modifier, tap Tab to move, add ⇧ to go back and let go to switch; Esc cancels. Windows on this desktop come first, then other desktops, then minimized ones.
+- **Dock clicks**: Optional: click the Dock icon of the app you're using to minimize its windows or hide it, and click again to bring it back. With a mouse that has a middle button, middle-click an icon to quit the app (it still asks about unsaved work), or hold ⌥ to force quit after a confirmation. Finder and Harbor are never quit this way.
+<!-- harbor:area-dock:end -->
 
 Pictures are taken only at the moment a preview opens. Harbor never records continuously, and nothing is saved.
 
@@ -91,18 +78,17 @@ Pictures are taken only at the moment a preview opens. Harbor never records cont
 
 Type with your voice in any app.
 
-- **Hold Right Option, speak, and let go.** Your words are typed wherever your cursor is. A quick tap does nothing, so the key still works normally.
-- **Hands-free mode:** press ⌃⌥Space to start and again to stop, for longer dictation.
-- **Live words** appear in the island as you speak, or in a small floating pill if the island is off.
-- **Smart clean-up** uses Apple's on-device AI to fix grammar, drop "um"s and false starts, and handle corrections like *"Monday, actually Tuesday"*. If its result ever looks wrong, Harbor uses its basic clean-up instead.
-- **Basic clean-up:** capitals, punctuation, and a question mark when you ask a question.
-- **Many languages,** some with a one-time download.
-- **Safe typing:** Harbor types straight into the text field when it can, otherwise it pastes and puts back what you had copied. If no text field is selected, the text waits on your clipboard instead of landing somewhere unexpected.
-- **Your vocabulary:** teach it names, brands and slang, and fixes like "chat gpt" → "ChatGPT". Import and export the list.
-- **Adapts to the app:** formal in Mail, casual in Messages and Slack, and exactly what you said in Terminal and code editors. Change any app in Settings.
-- **History:** your recent dictations, searchable, with what was heard and what was typed. Copy one, insert it again, or add a word from it. Kept privately (or in memory only), and deleted after 30 days.
-- **Transcribe recordings:** drop a voice memo, lecture, meeting or video on the notch (or the Transcribe window). Hours-long files work, with progress and time left. Export as text, Markdown or .srt subtitles, and get an on-device summary on Macs with Apple Intelligence.
-- Optional start and stop sounds, and your choice of push-to-talk key.
+<!-- harbor:area-dictation:start -->
+- **Hold to talk**: Hold the key, speak and let go: your words are typed wherever your cursor is, and appear live in the island as you speak (or in a small pill if the island is off). A quick tap does nothing, so the key still works normally. Many languages, some with a one-time download, all transcribed on your Mac.
+- **Start and stop dictation**: For longer dictation, press the shortcut to start and again to stop, so you don't have to hold a key.
+- **Punctuation and clean-up**: Capitals, punctuation and a question mark when you ask a question, with “um”s and “uh”s left out. Used whenever smart clean-up is off or unavailable.
+- **Smart clean-up** *(macOS 26+)*: Apple's on-device AI fixes grammar, drops false starts and handles corrections like “Monday, actually Tuesday”. If its result ever looks wrong, Harbor uses basic clean-up instead. Nothing leaves your Mac.
+- **Typing your words**: Harbor types straight into the text field when it can, and otherwise pastes and puts back what you had copied. If no text field is selected, the text waits on your clipboard instead of landing somewhere unexpected. Optional start and stop sounds.
+- **Custom vocabulary**: Teach it names, brands and slang so the recognizer and smart clean-up spell them right, and add fixes like “chat gpt” → “ChatGPT” for words it keeps getting wrong. Import and export the list.
+- **Style per app**: Formal in Mail, casual in Messages and Slack, and exactly what you said in Terminal and code editors. The app in front when you start picks the style, and you can change any app in Settings.
+- **Dictation history**: Your recent dictations, searchable, with what was heard and what was typed. Copy one, insert it again, or add a word from it to your vocabulary. Kept privately (or in memory only), 50 entries for 30 days by default.
+- **Transcribe recordings**: Drop a voice memo, lecture, meeting or video on the notch (or open the Transcribe window) and get text with timestamps, made on your Mac. Hours-long files work, with progress and time left. Export as text, Markdown or .srt subtitles, and get an on-device summary on Macs with Apple Intelligence.
+<!-- harbor:area-dictation:end -->
 
 Speech is transcribed **entirely on your Mac** and never leaves it.
 
@@ -112,73 +98,55 @@ Speech is transcribed **entirely on your Mac** and never leaves it.
 
 Small tools you'll use every day.
 
-**Clipboard history (⌘⇧V)**
-- Remembers text, links, images and files you copy. Open it, type to search, and press Return to paste.
-- Pin items you use often (⌘P), delete with ⌘⌫.
-- Keep 50 to 500 items. Pinned items are never removed.
-- Skips passwords: copies from password managers and anything marked private are never saved.
-- Choose to keep history after Harbor quits (stored privately, readable only by your account) or in memory only.
+<!-- harbor:area-qualityOfLife:start -->
+- **Clipboard history**: Remembers text, links, images and files you copy: open it, type to search and press Return to paste. Pin items with ⌘P, delete with ⌘⌫, and keep 50 to 500 items. Copies from password managers and anything marked private are never saved, and history can stay in memory only if you prefer.
+- **Keep Awake**: Stop your Mac from sleeping, until you turn it off or for a set time, from the menu bar or the island's ☕ button. Optionally let the screen turn off while downloads and music keep running.
+<!-- harbor:area-qualityOfLife:end -->
 
-**Window snapping**
-- ⌃⌥ with arrow keys: left, right, top and bottom halves.
-- ⌃⌥ D / F / G: left, middle and right thirds.
-- ⌃⌥ Return to maximize, ⌃⌥ C to center.
-- An adjustable gap between windows, and every shortcut can be changed.
-- **Drag to snap (optional):** drag a window to a screen edge for half, the top for full screen, or a corner for a quarter, with a preview. Harbor tells you if macOS's own tiling is also on.
+**Windows**
 
-**Window layouts**
-- Save where all your windows are ("Coding", "Writing"), then put them back with one click from the menu bar or the island, or with a shortcut.
-- Apps that aren't open are opened. If a monitor is missing, the layout is fitted onto the screens you have.
+<!-- harbor:area-windows:start -->
+- **Window snapping**: Snap the front window with the keyboard: halves with the arrow keys, thirds with D, F and G, full screen with Return and centered with C, all with ⌃⌥. An adjustable gap keeps windows apart, and every shortcut can be changed.
+- **Drag to snap**: Optional: drag a window to a screen edge for half, the top for full screen, or a corner for a quarter, with a preview of where it will go. Harbor tells you if macOS's own tiling is also on.
+- **Window layouts**: Save where all your windows are (“Coding”, “Writing”), then put them back with one click from the menu bar or the island, or with a shortcut. Apps that aren't open are opened, and if a monitor is missing the layout is fitted onto the screens you have.
+- **Presenting**: One switch hides your desktop icons, turns on Do Not Disturb, keeps your Mac awake and quiets Harbor's pop-ups and clipboard history. Switch it off and everything is exactly as before.
+<!-- harbor:area-windows:end -->
 
-**Text snippets**
-- Type a trigger like `;email` in any app and it expands into your saved text. Use `{date}`, `{time}`, `{clipboard}` and `{cursor}` inside.
-- Never reads or expands in password fields, and skips password managers and any app you exclude. Import and export your list.
+**Screen tools**
 
-**Tidy menu bar (optional)**
-- ⌘-drag icons to the left of Harbor's thin divider, then click the arrow to hide or show them. They tuck away again on their own.
+<!-- harbor:area-screenTools:start -->
+- **Copy text from the screen**: Drag a box around anything on screen (a picture, a video, a PDF, an app that won't let you select) and its text is copied, read on your Mac in any language Apple supports. QR codes too: Harbor copies what they say and offers to open the link.
+- **Color picker**: A magnifier to pick any pixel on screen. The color is copied as HEX, RGB, HSL, SwiftUI or NSColor, your choice, and your last 10 colors wait in the island: click to copy again, right-click for another format.
+<!-- harbor:area-screenTools:end -->
 
-**Presenting**
-- One switch hides your desktop icons, turns on Do Not Disturb, keeps your Mac awake and quiets Harbor's pop-ups and clipboard history. Switch it off and everything is exactly as before.
+**Typing and the menu bar**
 
-**Keep Awake**
-- Stop your Mac from sleeping, indefinitely or for a set time.
-- Optionally let the screen turn off while downloads and music keep running.
-- Switch it on from the menu bar or the island's ☕ button.
-
-**Text grab (⌃⌥O)**
-- Drag a box around anything on screen (a picture, a video, a PDF, an app that won't let you select) and its text is copied. Read on your Mac in any language Apple supports.
-- QR codes too: Harbor copies what they say and offers to open the link.
-
-**Color picker (⌃⌥P)**
-- A magnifier to pick any pixel. The color is copied as HEX, RGB, HSL, SwiftUI or NSColor, your choice.
-- Your last 10 colors stay in the island: click to copy again, right-click for another format.
-
-**File shelf**
-- Drop files onto the notch and pick them up later. The shelf points to your files instead of copying them.
-- Right-click to AirDrop, zip, resize or convert. Originals are never changed.
+<!-- harbor:area-typing:start -->
+- **Text snippets**: Type a trigger like ;email in any app and it expands into your saved text, with {date}, {time}, {clipboard} and {cursor} filled in. Never in password fields or password managers, and you can exclude any app. Import and export your list.
+- **Menu bar icon hider**: Optional: ⌘-drag menu bar icons to the left of Harbor's thin divider, then click the arrow to hide or show them; they tuck away again on their own. A short guide shows you how the first time.
+<!-- harbor:area-typing:end -->
 
 ---
 
 ## 🎨 Make it yours
 
-**Settings → Appearance** changes every Harbor panel at once:
+<!-- harbor:area-appearance:start -->
+- **Appearance**: Settings → Appearance changes every Harbor panel at once: Liquid Glass (macOS 26), Frosted or Solid; Clear or Frosted glass with a strength slider; the system accent, a preset or any custom color, optionally tinting the glass; and corners and opacity. With Reduce Motion on, springs become gentle fades.
+<!-- harbor:area-appearance:end -->
 
-- **Surface:** Liquid Glass (macOS 26+), Frosted or Solid.
-- **Glass:** Clear, like the macOS Dock, or Frosted, with a strength slider.
-- **Accent color:** the system accent, a set of presets, or any custom color, with an option to tint the glass.
-- **Corners** and **opacity.**
-
-Harbor also respects **Reduce Motion**, switching springs to gentle fades, and can **open at login**.
-
-Every feature can be switched off on its own, and every setting has an ⓘ button that explains it. A built-in guide walks you through each feature with animated examples, and ends with a cheat sheet.
+Every feature can be switched off on its own, and every setting has an ⓘ button that explains it.
 
 ---
 
 ## Shortcuts, backups and your own messages
 
-- **Shortcuts app:** 12 Harbor actions, including Grab Text (returns the text), Pick Color (returns the value), Start or Stop Dictation, Start Timer, Pomodoro, Snap Window, Apply Window Layout, Keep Awake, Presenting, Add File to Shelf, Switch Audio Output and Show Island Message. Many work from Spotlight and Siri too: "Grab text with Harbor".
-- **Back Up & Restore:** export every setting, shortcut, snippet, vocabulary word and window layout to one `.harbor` file, and import it on another Mac. You see exactly what will change first, and your current settings are backed up automatically. Histories are never included.
-- **Your own island messages:** any script or app can show a message, with a progress bar, in the island. Use a `harbor://` link, the bundled `harbor` command-line tool, or Shortcuts. You can mute or block any sender. See [WIDGETS.md](WIDGETS.md).
+<!-- harbor:area-platform:start -->
+- **Shortcuts actions**: 12 Harbor actions for the Shortcuts app, including Grab Text (returns the text), Pick Color (returns the value), Start or Stop Dictation, Start Timer, Pomodoro, Snap Window, Apply Window Layout, Keep Awake, Presenting, Add File to Shelf, Switch Audio Output and Show Island Message. Many work from Spotlight and Siri too: “Grab text with Harbor”.
+- **Island messages**: Any script or app can show a message in the island, with an icon, a progress bar and a link: through Shortcuts, a harbor:// link or the bundled harbor command-line tool. Each sender is listed in Settings and can be muted or blocked.
+- **Back up and restore settings**: Export every setting, shortcut, snippet, vocabulary word and window layout to one .harbor file, and import it on another Mac. You see exactly what will change first, and your current settings are backed up automatically. Histories are never included.
+<!-- harbor:area-platform:end -->
+
+See [WIDGETS.md](WIDGETS.md) for island messages from your own scripts and apps.
 
 ## Install
 
@@ -193,36 +161,41 @@ Harbor lives in the menu bar (the ⚓ icon). The guide opens the first time to s
 
 Allow only what you want to use. Anything you skip simply turns off the features that need it, and Harbor never crashes because of a missing permission.
 
-| Permission | What it's for |
-|---|---|
-| Accessibility | Dock previews, the window switcher, dictation typing, snapping, clipboard pasting |
-| Screen Recording | Window pictures in previews (without it, you see app icons) |
-| Microphone | Dictation |
-| Speech Recognition | Dictation on macOS 14–25 |
-| Calendar | The next event in the island |
-| Bluetooth | Pop-ups for keyboards, mice and controllers (headphones and speakers work without it) |
-| Downloads folder | Download progress in the island |
-| Automation | Controlling Music and Spotify, and the Dark Mode button |
+<!-- harbor:permissions:start -->
+| Permission | What it's for | Used by |
+|---|---|---|
+| Accessibility | Lets Harbor notice when you hover the Dock, move and switch windows, use its keyboard shortcuts, and type dictated text. | Dock previews, Window buttons on previews, Previews in ⌘⇥, Window switcher, Dock clicks, Hold to talk, Start and stop dictation, Typing your words, Clipboard history, Window snapping, Drag to snap, Window layouts, Text snippets |
+| Screen Recording | Lets Harbor show pictures of your windows in previews and the switcher, and read text you select on screen. A picture is taken only when you ask, and is never saved or uploaded. | Copy text from the screen, Dock previews (optional) |
+| Microphone | Lets Harbor hear you while you hold the dictation key, and only then. | Hold to talk, Start and stop dictation |
+| Speech Recognition | Turns what you say into text, on this Mac. | Hold to talk, Start and stop dictation, Transcribe recordings |
+| Calendar | Shows your next event in the island. Harbor only reads your calendar and never changes it. | Next calendar event (optional), Join meetings (optional) |
+| Bluetooth | Lets the island show a pop-up when a keyboard, mouse or other Bluetooth device connects. Headphones and speakers pop up without it. | AirPods and Bluetooth (optional) |
+| Downloads folder | Lets the island see files arriving in your Downloads folder, to show their progress. macOS asks the first time. | Download progress |
+| Automation | Lets Harbor control Music and Spotify and switch Dark Mode. macOS asks the first time you use each. | Now Playing, Quick buttons and timers |
+<!-- harbor:permissions:end -->
 
-You can see and fix them in **Settings → Permissions**. Automation is asked for the first time you use it. A "Fix…" link appears in the menu whenever a feature is waiting for one.
+You can see and fix them in **Settings → Permissions**. A "Fix…" link appears in the menu whenever a feature is waiting for one.
 
 ## Keyboard shortcuts
 
-| Shortcut | Action |
+<!-- harbor:shortcuts:start -->
+| Shortcut | What it does |
 |---|---|
-| Hold Right Option | Dictate (push to talk) |
-| ⌃⌥Space | Start or stop dictation |
+| Hover a Dock icon, or ⌘⇥ | Window previews |
 | ⌥⇥ | Window switcher |
-| ⌘⇥ | Apple's app switcher, with Harbor's window previews |
-| ⌘⇧V | Clipboard history |
-| ⌃⌥ ← → ↑ ↓ | Snap to a half |
-| ⌃⌥ D / F / G | Snap to a third |
-| ⌃⌥ Return | Maximize |
-| ⌃⌥ C | Center |
-| ⌃⌥ O | Copy text from the screen |
-| ⌃⌥ P | Pick a color |
+| Hold Right ⌥ | Dictate (hold) |
+| ⌃⌥Space | Dictate (start/stop) |
+| ⇧⌘V | Clipboard history |
+| ⌃⌥ ← / → | Snap left / right half |
+| ⌃⌥ D / F / G | Snap to thirds |
+| ⌃⌥ ↩ / C | Full screen / center |
+| ⌃⌥ ↑ / ↓ | Snap top / bottom half |
+| Set your own in Settings | Present |
+| ⌃⌥O | Copy text from the screen |
+| ⌃⌥P | Pick a color |
 
 Every shortcut can be changed in Settings.
+<!-- harbor:shortcuts:end -->
 
 ## Privacy
 
@@ -233,17 +206,24 @@ Every shortcut can be changed in Settings.
 - Clipboard history skips passwords and private items, and is stored readable only by your account, or kept in memory only if you prefer.
 - No accounts, analytics or tracking.
 
-## Updates
+## Updates and getting started
 
-Harbor checks for updates when it opens and every 30 minutes, and asks before installing. You can also choose **Check for Updates…** from the menu bar. Every update is signed, and Harbor installs only updates signed with its own key.
+<!-- harbor:area-general:start -->
+- **Welcome guide**: A short tour of every feature with animated examples, ending with a cheat sheet of your own shortcuts. New and updated features are marked until you've seen them. Open it any time from the menu bar or Settings → General.
+- **Open at login**: Starts Harbor in the background when you log in, so the island and shortcuts are always ready. macOS may ask you to approve it under Login Items.
+- **Automatic updates**: Harbor checks for updates when it opens and every 30 minutes, and asks before installing; Check for Updates… in the menu bar checks right away. Every update is signed, only updates signed with Harbor's own key are installed, and your settings are backed up and brought up to date as it installs.
+- **What's New**: After an update, a small pop-up by the notch says what changed, once. One click shows the highlights, with a way to try each new thing and to set up only what's new. Every version's notes stay under What's New in the menu bar.
+<!-- harbor:area-general:end -->
 
 ## Experimental features
 
 A few extras rely on parts of macOS that Apple doesn't officially offer to apps. They're **all off by default**, clearly labeled, and could stop working after a macOS update. If one does, Harbor falls back on its own.
 
-- **Now Playing for all apps** (beyond Music and Spotify)
-- **Exact brightness level** in the brightness pop-up (read-only)
-- **Player on the lock screen.** Anyone at your locked Mac can see what's playing and pause or skip it.
+<!-- harbor:experimental:start -->
+- **Now Playing for every app**: Music and Spotify use Apple-approved methods. All apps also covers browsers, Podcasts and more, but relies on an unofficial part of macOS that could stop working after an update. If it does, Harbor goes back to Music and Spotify.
+- **Exact brightness level**: macOS has no approved way for apps to read the brightness level, so this uses an unofficial part of macOS. It only reads the level and never changes it. Without it, the pop-up shows which way brightness changed.
+- **Player on the lock screen**: Shows the Now Playing card on the lock screen, like on an iPhone. It uses an unofficial part of macOS, and anyone at your locked Mac can see what's playing and pause or skip it.
+<!-- harbor:experimental:end -->
 
 ## FAQ
 
