@@ -101,6 +101,7 @@ Small tools you'll use every day.
 <!-- harbor:area-qualityOfLife:start -->
 - **Clipboard history**: Remembers text, links, images and files you copy: open it, type to search and press Return to paste. Pin items with ⌘P, delete with ⌘⌫, and keep 50 to 500 items. Copies from password managers and anything marked private are never saved, and history can stay in memory only if you prefer.
 - **Keep Awake**: Stop your Mac from sleeping, until you turn it off or for a set time, from the menu bar or the island's ☕ button. Optionally let the screen turn off while downloads and music keep running.
+- **Keep Awake while working**: Turn on “While working” under Keep Awake and Harbor keeps your Mac awake only while real work is running, such as an export in Premiere Pro or Final Cut, a HandBrake encode, Claude or Terminal busy on a task, a download, or a script started with `harbor awake`. When the work stops, it sleeps as usual. Optionally it keeps working with the lid closed, even on battery, through a small helper you approve once. On battery it gives up at 20% (you can change it) and lets the Mac sleep if it runs hot, so it never runs your Mac flat. The screen may turn off meanwhile.
 <!-- harbor:area-qualityOfLife:end -->
 
 **Windows**
