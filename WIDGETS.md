@@ -63,6 +63,19 @@ the same rules.
 - **Privacy:** messages never leave your Mac. Harbor logs only that a message was shown or dropped,
   never its text.
 
+### Keep the Mac awake while a command runs
+
+```sh
+harbor awake -- ./render.sh --all      # runs the command; the Mac stays awake until it ends
+harbor awake --pid 4242 --name Export  # or hold while an existing process runs
+```
+
+`harbor awake` opens `harbor://awake?pid=…&name=…`. While Keep Awake "While working" is on, Harbor
+keeps the Mac awake until that process exits (it watches the process, so a killed command releases
+it too), with the lid closed too if that's switched on. With Keep Awake off the command still runs,
+but the Mac sleeps as usual. Keep Awake's battery and heat limits apply, and the island shows
+"<name> is running". The command's exit code is passed through.
+
 ### Sample: a build progress bar
 
 `Samples/IslandProgress/` contains two things:
