@@ -47,6 +47,7 @@ The notch becomes a living part of your Mac. When it's closed, the island is exa
 - **Quick buttons and timers**: Round buttons in the open island: Keep Awake, Dark Mode, Lock Screen, sound output, and a timer with 5, 15, 25 and 60 minute presets that tells you when it's done.
 - **Sound output picker**: Switch between speakers, AirPods, headphones and displays, or pick another microphone, right from the island. Press and hold the volume pop-up to get there fast.
 - **Next calendar event**: Your next event and how soon it starts, in the open island. Click it to open Calendar. Harbor only reads your calendar and never changes it.
+- **Camera check**: Check your camera before a call: a mirrored preview opens in the island from the camera button next to a meeting or in the sound panel, and you can switch between your Mac's camera, an iPhone or a USB camera. The camera is on only while the preview is open, and nothing is recorded.
 - **Join meetings**: When your next event has a Zoom, Google Meet, Teams, Webex or FaceTime link, a Join button appears next to it, and the island pops up a minute before it starts. Zoom links open straight in the Zoom app.
 - **Pomodoro**: 25-minute work sessions and short breaks, with a long break every four (all adjustable). The countdown is red while you work and green on breaks, today's count shows in the island, Settings keeps a 7-day history, and it can turn on Do Not Disturb while you work.
 - **File shelf**: Drag files onto the notch to set them aside, then drag them back out when you need them; the shelf points to your files instead of copying them. Right-click (or ⌘-click several) to AirDrop, zip, resize an image (50%, 1080p, 720p or any width) or convert HEIC, PNG and JPEG. The result is always a new file next to the original.
@@ -100,8 +101,12 @@ Small tools you'll use every day.
 
 <!-- harbor:area-qualityOfLife:start -->
 - **Clipboard history**: Remembers text, links, images and files you copy: open it, type to search and press Return to paste. Pin items with ⌘P, delete with ⌘⌫, and keep 50 to 500 items. Copies from password managers and anything marked private are never saved, and history can stay in memory only if you prefer.
+- **Paste as plain text**: Press ⌃⌥V to paste what you copied without its fonts, colors, sizes or links, in any app. Your clipboard keeps the original. In clipboard history, ⌥Return pastes the chosen item as plain text.
+- **Auto-clear the clipboard**: Empties the clipboard a set time after each copy, or when your Mac locks or goes to sleep, so a password or address you copied doesn't linger. Clipboard history keeps what it saved.
+- **Bluetooth while asleep**: Disconnects your Bluetooth headphones and speakers (or every device) when your Mac goes to sleep, so they don't stay tied to a sleeping Mac and can connect to your phone. When it wakes, Harbor reconnects only the devices it disconnected. Bluetooth itself stays on.
+- **Quit Apps**: Quit Apps lists every open app, from the island's Windows panel or Quit Apps… in the menu bar. Quit them one at a time, all at once, or all but the one in front; Quit All asks for a second click first. Apps with unsaved changes still ask before quitting, and Finder and Harbor are never listed.
 - **Keep Awake**: Stop your Mac from sleeping, until you turn it off or for a set time, from the menu bar or the island's ☕ button. Optionally let the screen turn off while downloads and music keep running.
-- **Keep Awake while working**: Turn on “While working” under Keep Awake and Harbor keeps your Mac awake only while real work is running, such as an export in Premiere Pro or Final Cut, a HandBrake encode, Claude or Terminal busy on a task, a download, or a script started with `harbor awake`. When the work stops, it sleeps as usual. Optionally it keeps working with the lid closed, even on battery, through a small helper you approve once. On battery it gives up at 20% (you can change it) and lets the Mac sleep if it runs hot, so it never runs your Mac flat. The screen may turn off meanwhile.
+- **Keep Awake while working**: Turn on “While working” under Keep Awake and Harbor keeps your Mac awake only while real work is running, such as an export in Premiere Pro or Final Cut, a HandBrake encode, Claude or Terminal busy on a task, a download, or a script started with `harbor awake`, and if you like whenever it's plugged in or has an external display. When the work stops, it sleeps as usual. Optionally it keeps working with the lid closed, even on battery, through a small helper you approve once. On battery it gives up at 20% (you can change it) and lets the Mac sleep if it runs hot, so it never runs your Mac flat. The screen may turn off meanwhile.
 <!-- harbor:area-qualityOfLife:end -->
 
 **Windows**
@@ -165,12 +170,13 @@ Allow only what you want to use. Anything you skip simply turns off the features
 <!-- harbor:permissions:start -->
 | Permission | What it's for | Used by |
 |---|---|---|
-| Accessibility | Lets Harbor notice when you hover the Dock, move and switch windows, use its keyboard shortcuts, and type dictated text. | Dock previews, Window buttons on previews, Previews in ⌘⇥, Window switcher, Dock clicks, Hold to talk, Start and stop dictation, Typing your words, Clipboard history, Window snapping, Drag to snap, Window layouts, Text snippets |
+| Accessibility | Lets Harbor notice when you hover the Dock, move and switch windows, use its keyboard shortcuts, and type dictated text. | Dock previews, Window buttons on previews, Previews in ⌘⇥, Window switcher, Dock clicks, Hold to talk, Start and stop dictation, Typing your words, Clipboard history, Paste as plain text, Window snapping, Drag to snap, Window layouts, Text snippets |
 | Screen Recording | Lets Harbor show pictures of your windows in previews and the switcher, and read text you select on screen. A picture is taken only when you ask, and is never saved or uploaded. | Copy text from the screen, Dock previews (optional) |
 | Microphone | Lets Harbor hear you while you hold the dictation key, and only then. | Hold to talk, Start and stop dictation |
 | Speech Recognition | Turns what you say into text, on this Mac. | Hold to talk, Start and stop dictation, Transcribe recordings |
 | Calendar | Shows your next event in the island. Harbor only reads your calendar and never changes it. | Next calendar event (optional), Join meetings (optional) |
-| Bluetooth | Lets the island show a pop-up when a keyboard, mouse or other Bluetooth device connects. Headphones and speakers pop up without it. | AirPods and Bluetooth (optional) |
+| Bluetooth | Lets the island show a pop-up when a keyboard, mouse or other Bluetooth device connects, and lets Harbor disconnect your headphones while your Mac sleeps. Headphones and speakers pop up without it. | AirPods and Bluetooth (optional), Bluetooth while asleep (optional) |
+| Camera | Shows your camera in the island so you can check how you look before a call. The camera is on only while that panel is open, and nothing is recorded. | Camera check (optional) |
 | Downloads folder | Lets the island see files arriving in your Downloads folder, to show their progress. macOS asks the first time. | Download progress |
 | Automation | Lets Harbor control Music and Spotify and switch Dark Mode. macOS asks the first time you use each. | Now Playing, Quick buttons and timers |
 <!-- harbor:permissions:end -->
@@ -187,6 +193,7 @@ You can see and fix them in **Settings → Permissions**. A "Fix…" link appear
 | Hold Right ⌥ | Dictate (hold) |
 | ⌃⌥Space | Dictate (start/stop) |
 | ⇧⌘V | Clipboard history |
+| ⌃⌥V | Paste as plain text |
 | ⌃⌥ ← / → | Snap left / right half |
 | ⌃⌥ D / F / G | Snap to thirds |
 | ⌃⌥ ↩ / C | Full screen / center |
