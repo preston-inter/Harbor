@@ -34,7 +34,7 @@ Allow only what you want to use. Anything you skip turns off the features that n
 | Bluetooth | Lets the island show a pop-up when a keyboard, mouse or other Bluetooth device connects, and lets Harbor disconnect your headphones while your Mac sleeps. Headphones and speakers pop up without it. | AirPods and Bluetooth (optional), Bluetooth while asleep (optional) |
 | Camera | Shows your camera in the island so you can check how you look before a call. The camera is on only while that panel is open, and nothing is recorded. | Camera check (optional) |
 | Downloads folder | Lets the island see files arriving in your Downloads folder, to show their progress. macOS asks the first time. | Download progress |
-| Automation | Lets Harbor control Music and Spotify and switch Dark Mode. macOS asks the first time you use each. | Now Playing, Quick buttons and timers |
+| Automation | Lets Harbor control Music and Spotify and switch Dark Mode. macOS asks the first time you use each. | Now Playing, Timer and controls |
 <!-- harbor:permissions:end -->
 
 ### The sensitive parts, plainly
@@ -45,6 +45,10 @@ Allow only what you want to use. Anything you skip turns off the features that n
 - **App volume**: macOS calls this "System Audio Recording". Harbor turns the app's sound straight back into sound at the volume you chose. It's never saved or sent.
 - **Camera**: on only while the camera check panel is open. Nothing is recorded.
 - **Clipboard history** skips password managers, concealed and temporary items, and is readable only by your account (or kept in memory only, if you prefer).
+<!-- harbor:privacy-notes:start -->
+- **Replace macOS's volume and brightness pop-ups**: It watches the keyboard's media keys through Accessibility, and only the volume, mute and brightness keys: they're applied by Harbor instead of macOS. No other key is looked at, and nothing is saved or logged.
+- **Agent status**: Set Up changes other apps' settings files, only when you click it: for Claude Code it adds three hooks to `~/.claude/settings.json`, for Codex it sets `notify` in `~/.codex/config.toml` (only if Codex has none). Before the first change Harbor copies the file next to it as `<file>.harbor-backup`. The added lines only run Harbor's `harbor` tool to show a message; nothing is read from the agents. To undo it, click Remove (Settings → General → Agent status), or Remove Harbor Completely, which takes the lines out; or restore the backup copy.
+<!-- harbor:privacy-notes:end -->
 - **The lid helper** (Keep Awake "While working" with the lid closed) runs as root after you approve it in Login Items. It can only run `/usr/bin/pmset` with fixed arguments to turn lid sleep off and back on, and it only accepts requests from Harbor signed by the same developer. It turns lid sleep back on by itself if Harbor quits, the battery runs low or the Mac gets hot.
 
 ## Experimental features
@@ -53,7 +57,7 @@ These use parts of macOS that Apple doesn't officially offer to apps. They're al
 
 <!-- harbor:experimental:start -->
 - **Now Playing for every app**: Music and Spotify use Apple-approved methods. All apps also covers browsers, Podcasts and more, but relies on an unofficial part of macOS that could stop working after an update. If it does, Harbor goes back to Music and Spotify.
-- **Replace macOS's volume and brightness pop-ups**: Experimental, off by default: Harbor takes the volume, mute and brightness keys and makes the change itself, so only the island's pop-up appears instead of two at once. Same steps as macOS (⌥⇧ for quarter steps). Any key Harbor can't apply, such as a speaker whose volume can't be set or an external display's brightness, goes to macOS as usual, and if Harbor stops responding the keys go back to macOS within a second. Brightness uses an unofficial part of macOS.
+- **Replace macOS's volume and brightness pop-ups**: Experimental: Harbor takes the volume, mute and brightness keys and makes the change itself, so only the island's pop-up appears instead of two at once. Same steps as macOS (⌥⇧ for quarter steps). Any key Harbor can't apply, such as a speaker whose volume can't be set or an external display's brightness, goes to macOS as usual, and if Harbor stops responding the keys go back to macOS within a second. Brightness uses an unofficial part of macOS.
 - **Exact brightness level**: macOS has no approved way for apps to read the brightness level, so this uses an unofficial part of macOS. It only reads the level and never changes it. Without it, the pop-up shows which way brightness changed.
 - **Player on the lock screen**: Shows the Now Playing card on the lock screen, like on an iPhone. It uses an unofficial part of macOS, and anyone at your locked Mac can see what's playing and pause or skip it.
 <!-- harbor:experimental:end -->
