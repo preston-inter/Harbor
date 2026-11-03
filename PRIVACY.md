@@ -26,7 +26,7 @@ Allow only what you want to use. Anything you skip turns off the features that n
 <!-- harbor:permissions:start -->
 | Permission | What it's for | Used by |
 |---|---|---|
-| Accessibility | Lets Harbor notice when you hover the Dock, move and switch windows, use its keyboard shortcuts, and type dictated text. | Dock previews, Window buttons on previews, Previews in ⌘⇥, Window switcher, Dock clicks, Hold to talk, Start and stop dictation, Typing your words, Clipboard history, Paste as plain text, Quit protection, Window snapping, Green button maximizes, Quit on last window, Window layouts, Text snippets |
+| Accessibility | Lets Harbor notice when you hover the Dock, move and switch windows, use its keyboard shortcuts, and type dictated text. | Replace macOS's volume and brightness pop-ups, Dock previews, Window buttons on previews, Previews in ⌘⇥, Window switcher, Dock clicks, Hold to talk, Start and stop dictation, Typing your words, Clipboard history, Paste as plain text, Quit protection, Window snapping, Green button maximizes, Quit on last window, Window layouts, Text snippets |
 | Screen Recording | Lets Harbor show pictures of your windows in previews and the switcher, and read or capture what you select on screen. A picture is taken only when you ask and is never uploaded; only captures you take are kept. | Copy text from the screen, Capture to shelf, Dock previews (optional) |
 | Microphone | Lets Harbor hear you while you hold the dictation key, and only then. | Hold to talk, Start and stop dictation |
 | Speech Recognition | Turns what you say into text, on this Mac. | Hold to talk, Start and stop dictation, Transcribe recordings |
@@ -53,6 +53,7 @@ These use parts of macOS that Apple doesn't officially offer to apps. They're al
 
 <!-- harbor:experimental:start -->
 - **Now Playing for every app**: Music and Spotify use Apple-approved methods. All apps also covers browsers, Podcasts and more, but relies on an unofficial part of macOS that could stop working after an update. If it does, Harbor goes back to Music and Spotify.
+- **Replace macOS's volume and brightness pop-ups**: Experimental, off by default: Harbor takes the volume, mute and brightness keys and makes the change itself, so only the island's pop-up appears instead of two at once. Same steps as macOS (⌥⇧ for quarter steps). Any key Harbor can't apply, such as a speaker whose volume can't be set or an external display's brightness, goes to macOS as usual, and if Harbor stops responding the keys go back to macOS within a second. Brightness uses an unofficial part of macOS.
 - **Exact brightness level**: macOS has no approved way for apps to read the brightness level, so this uses an unofficial part of macOS. It only reads the level and never changes it. Without it, the pop-up shows which way brightness changed.
 - **Player on the lock screen**: Shows the Now Playing card on the lock screen, like on an iPhone. It uses an unofficial part of macOS, and anyone at your locked Mac can see what's playing and pause or skip it.
 <!-- harbor:experimental:end -->
