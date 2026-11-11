@@ -178,6 +178,7 @@ Harbor starts with the essentials: the island with Now Playing and pop-ups, Dock
 - **Windows**: Green button maximizes (Free), Quit on last window (Free), Window layouts (Pro in 2.0), Presenting (Pro in 2.0)
 - **Screen tools**: Copy text from the screen (Pro in 2.0), Capture to shelf (Free), Color picker (Free)
 - **Typing and the menu bar**: Scratchpad (Free), Text snippets (partly Pro in 2.0), Menu bar icon hider (Free)
+- **General**: Block YouTube ads in Safari (Free)
 - **Shortcuts, backups and messages**: Island messages (Pro in 2.0), Agent status (Pro in 2.0)
 <!-- harbor:store:end -->
 
@@ -263,6 +264,7 @@ Harbor works on your Mac: no accounts, no analytics, no tracking, and nothing yo
 <!-- harbor:privacy-notes:start -->
 - **Replace macOS's volume and brightness pop-ups**: It watches the keyboard's media keys through Accessibility, and only the volume, mute and brightness keys: they're applied by Harbor instead of macOS. No other key is looked at, and nothing is saved or logged.
 - **Agent status**: Set Up changes other apps' settings files, only when you click it: for Claude Code it adds three hooks to `~/.claude/settings.json`, for Codex it sets `notify` in `~/.codex/config.toml` (only if Codex has none). Before the first change Harbor copies the file next to it as `<file>.harbor-backup`. The added lines only run Harbor's `harbor` tool to show a message; nothing is read from the agents. To undo it, click Remove (Settings → General → Agent status), or Remove Harbor Completely, which takes the lines out; or restore the backup copy.
+- **Block YouTube ads in Safari**: The YouTube ad blocker is a Safari extension that runs only on youtube.com and youtube-nocookie.com pages, and only after you turn it on in Safari. It removes ad data from the pages and blocks requests to Google's ad servers from them. It doesn't read your history or other sites, sends nothing anywhere, and keeps only its on/off switch and the number of ads it skipped, in Safari.
 <!-- harbor:privacy-notes:end -->
 
 The full details, including what each permission sees and how to check it yourself, are on the [privacy page](PRIVACY.md).
@@ -275,6 +277,7 @@ The full details, including what each permission sees and how to check it yourse
 - **Automatic updates**: Harbor checks for updates when it opens and every 30 minutes, and asks before installing; Check for Updates… in the menu bar checks right away. Every update is signed, only updates signed with Harbor's own key are installed, and your settings are backed up and brought up to date as it installs.
 - **Remove Harbor completely**: Settings → General → Remove Harbor Completely… turns off Open at Login and the lid helper, resets Harbor's permissions, and moves its settings (with a last backup), histories, shelf, captures and Harbor itself to the Trash. Nothing is deleted outright, so you can change your mind until you empty the Trash.
 - **What's New**: After an update, a small pop-up by the notch says what changed, once. One click shows the highlights, with a way to try each new thing and to set up only what's new. Every version's notes stay under What's New in the menu bar.
+- **Block YouTube ads in Safari** *(free add-on)*: Harbor comes with a Safari extension that removes YouTube's ads: video ads are stopped before they load, or silenced and skipped if one still plays (your video then starts on its own), and ads in the feed, sidebar and search are hidden. Add it, then tick Harbor YouTube Ad Blocker in Safari's Extensions settings and allow it on youtube.com. It only runs on YouTube, and it uses no network of its own. YouTube changes its ads often, so a new ad can get through until Harbor updates.
 - **Add-ons**: Harbor starts with the essentials: the island, Dock previews, dictation, clipboard history, snapping and Keep Awake. Everything else is an add-on: add one and Harbor walks you through anything it needs (permissions are asked then, not at first launch), and it appears in the menu, Settings and the guide; until then it stays out of sight and never runs. Remove it any time: its settings are kept for next time. Everything is built into Harbor, so nothing is downloaded. Add-ons marked “Pro in 2.0” are free now and will need Harbor Pro from Harbor 2.0 on.
 <!-- harbor:area-general:end -->
 
