@@ -6,7 +6,9 @@ It's built natively in Swift and SwiftUI and runs on **macOS 14 Sonoma or later*
 
 **Free during early access.** Harbor Pro is coming, and early users will get a big discount.
 
-**[⬇ Download the latest version](https://github.com/preston-inter/Harbor/releases/latest)**
+**[⬇ Download Harbor from harborformac.com](https://harborformac.com/download/)**
+
+Website: [harborformac.com](https://harborformac.com) · Release notes: [harborformac.com/releases](https://harborformac.com/releases/) · Questions: [support@harborformac.com](mailto:support@harborformac.com)
 
 ---
 
@@ -194,7 +196,7 @@ Harbor starts with the essentials: the island with Now Playing and pop-ups, Dock
 
 ## Install
 
-1. Download **Harbor-x.y.z.dmg** from the [latest release](https://github.com/preston-inter/Harbor/releases/latest).
+1. Download **Harbor-x.y.z.dmg** from [harborformac.com/download](https://harborformac.com/download/).
 2. Open the DMG and drag **Harbor** into **Applications**.
 3. Open Harbor. macOS says it can't check it for malicious software, because Harbor isn't from the App Store. Click **Done**.
 4. Go to **System Settings → Privacy & Security** and click **Open Anyway** next to Harbor. You only need to do this once.
@@ -267,7 +269,7 @@ Harbor works on your Mac: no accounts, no analytics, no tracking, and nothing yo
 - **Block YouTube ads in Safari**: The YouTube ad blocker is a Safari extension that runs only on youtube.com and youtube-nocookie.com pages, and only after you turn it on in Safari. It removes ad data from the pages and blocks requests to Google's ad servers from them. It doesn't read your history or other sites, sends nothing anywhere, and keeps only its on/off switch and the number of ads it skipped, in Safari.
 <!-- harbor:privacy-notes:end -->
 
-The full details, including what each permission sees and how to check it yourself, are on the [privacy page](PRIVACY.md).
+The full details, including what each permission sees and how to check it yourself, are on the [privacy page](https://harborformac.com/privacy/).
 
 ## Updates and getting started
 
