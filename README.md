@@ -88,7 +88,7 @@ Type with your voice in any app.
 - **Hold to talk**: Hold the key, speak and let go: your words are typed wherever your cursor is, and appear live in the island as you speak (or in a small pill if the island is off). A quick tap does nothing, so the key still works normally. Many languages, some with a one-time download, all transcribed on your Mac.
 - **Start and stop dictation**: For longer dictation, press the shortcut to start and again to stop, so you don't have to hold a key.
 - **Punctuation and clean-up**: Capitals, punctuation and a question mark when you ask a question, with “um”s and “uh”s left out. Used whenever smart clean-up is off or unavailable.
-- **Smart clean-up** *(Harbor Pro in 2.0; macOS 26+)*: Apple's on-device AI fixes grammar, drops false starts and handles corrections like “Monday, actually Tuesday”. If its result ever looks wrong, Harbor uses basic clean-up instead. Nothing leaves your Mac.
+- **Smart clean-up** *(Harbor Pro in 2.0; macOS 26+)*: Apple's on-device AI fixes grammar, drops false starts and handles corrections like “Monday, actually Tuesday”. It only runs when what you said needs it, so plain sentences are typed at once. If its result ever looks wrong, Harbor uses basic clean-up instead. Nothing leaves your Mac.
 - **Typing your words**: Harbor types straight into the text field when it can, and otherwise pastes and puts back what you had copied. If no text field is selected, the text waits on your clipboard instead of landing somewhere unexpected. Optional start and stop sounds.
 - **Custom vocabulary** *(Harbor Pro in 2.0)*: Teach it names, brands and slang so the recognizer and smart clean-up spell them right, and add fixes like “chat gpt” → “ChatGPT” for words it keeps getting wrong. Import and export the list.
 - **Style per app** *(Harbor Pro in 2.0)*: Formal in Mail, casual in Messages and Slack, and exactly what you said in Terminal and code editors. The app in front when you start picks the style, and you can change any app in Settings.
@@ -252,7 +252,7 @@ Harbor works on your Mac: no accounts, no analytics, no tracking, and nothing yo
 <!-- harbor:network:start -->
 | What | Server | When | What's sent |
 |---|---|---|---|
-| Update checks | github.com (Harbor's releases) | When Harbor opens and every 30 minutes while automatic updates are on, and when you click Check for Updates… | A plain request for the update list. Nothing about you or your Mac (Sparkle's system profiling is off). |
+| Update checks | updates.harborformac.com (Harbor's update server, on Cloudflare) | When Harbor opens and every 30 minutes while automatic updates are on, and when you click Check for Updates… | A plain request for the update list. Nothing about you or your Mac (Sparkle's system profiling is off). |
 | Spotify album art | Spotify's image server | While Spotify plays, to show the cover in the island | A request for the cover picture Spotify itself names for the song playing. |
 <!-- harbor:network:end -->
 
