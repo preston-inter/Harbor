@@ -9,7 +9,7 @@ This page lists everything Harbor connects to, what each permission is for, and 
 <!-- harbor:network:start -->
 | What | Server | When | What's sent |
 |---|---|---|---|
-| Update checks | github.com (Harbor's releases) | When Harbor opens and every 30 minutes while automatic updates are on, and when you click Check for Updates… | A plain request for the update list. Nothing about you or your Mac (Sparkle's system profiling is off). |
+| Update checks | updates.harborformac.com (Harbor's update server, on Cloudflare) | When Harbor opens and every 30 minutes while automatic updates are on, and when you click Check for Updates… | A plain request for the update list. Nothing about you or your Mac (Sparkle's system profiling is off). |
 | Spotify album art | Spotify's image server | While Spotify plays, to show the cover in the island | A request for the cover picture Spotify itself names for the song playing. |
 <!-- harbor:network:end -->
 
@@ -80,4 +80,4 @@ To remove everything, use **Settings → General → Remove Harbor Completely…
 
 ## Questions
 
-Open an issue at [github.com/preston-inter/Harbor/issues](https://github.com/preston-inter/Harbor/issues).
+Email [support@harborformac.com](mailto:support@harborformac.com).
